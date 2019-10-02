@@ -42,7 +42,7 @@
             this.btnUseWeapon = new System.Windows.Forms.Button();
             this.btnUsePotion = new System.Windows.Forms.Button();
             this.btnNorth = new System.Windows.Forms.Button();
-            this.East = new System.Windows.Forms.Button();
+            this.btnEast = new System.Windows.Forms.Button();
             this.btnSouth = new System.Windows.Forms.Button();
             this.btnWest = new System.Windows.Forms.Button();
             this.rtbLocation = new System.Windows.Forms.RichTextBox();
@@ -176,15 +176,15 @@
             this.btnNorth.UseVisualStyleBackColor = true;
             this.btnNorth.Click += new System.EventHandler(this.btnNorth_Click);
             // 
-            // East
+            // btnEast
             // 
-            this.East.Location = new System.Drawing.Point(573, 457);
-            this.East.Name = "East";
-            this.East.Size = new System.Drawing.Size(75, 23);
-            this.East.TabIndex = 14;
-            this.East.Text = "East";
-            this.East.UseVisualStyleBackColor = true;
-            this.East.Click += new System.EventHandler(this.East_Click);
+            this.btnEast.Location = new System.Drawing.Point(573, 457);
+            this.btnEast.Name = "btnEast";
+            this.btnEast.Size = new System.Drawing.Size(75, 23);
+            this.btnEast.TabIndex = 14;
+            this.btnEast.Text = "East";
+            this.btnEast.UseVisualStyleBackColor = true;
+            this.btnEast.Click += new System.EventHandler(this.btnEast_Click);
             // 
             // btnSouth
             // 
@@ -267,7 +267,7 @@
             this.Controls.Add(this.rtbLocation);
             this.Controls.Add(this.btnWest);
             this.Controls.Add(this.btnSouth);
-            this.Controls.Add(this.East);
+            this.Controls.Add(this.btnEast);
             this.Controls.Add(this.btnNorth);
             this.Controls.Add(this.btnUsePotion);
             this.Controls.Add(this.btnUseWeapon);
@@ -307,7 +307,7 @@
         private System.Windows.Forms.Button btnUseWeapon;
         private System.Windows.Forms.Button btnUsePotion;
         private System.Windows.Forms.Button btnNorth;
-        private System.Windows.Forms.Button East;
+        private System.Windows.Forms.Button btnEast;
         private System.Windows.Forms.Button btnSouth;
         private System.Windows.Forms.Button btnWest;
         private System.Windows.Forms.RichTextBox rtbLocation;
