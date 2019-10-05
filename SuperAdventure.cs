@@ -455,5 +455,24 @@ namespace SuperAdventure
             UpdateInventoryListInUI();
             UpdatePotionListInUI();
         }
+
+        private void rtbLocation_TextChanged(object sender, EventArgs e)
+        {
+            rtbMessages.SelectionStart = rtbMessages.Text.Length;
+            rtbMessages.ScrollToCaret();
+        }
+
+        private void rtbMessages_TextChanged(object sender, EventArgs e)
+        {
+            rtbMessages.SelectionStart = rtbMessages.Text.Length;
+            rtbMessages.ScrollToCaret();
+        }
+
+        /* One way to scroll to the bottom, can also doubleclick on the RTB and add the code as an event 
+        private void ScrollToBottomOfMessages()
+        {
+            rtbMessages.SelectionStart = rtbMessages.Text.Length;
+            rtbMessages.ScrollToCaret();
+        }*/
     }
 }
